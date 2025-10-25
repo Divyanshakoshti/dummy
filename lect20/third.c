@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+         char name[] = "madam"; // 'h','i','i','\0'
+     int ln=strlen(name);
+     int isTrue=1;
+     for(int i=0;i<ln/2;i++){
+         if(name[i]!=name[ln-i-1]){
+             isTrue=0;
+             break;
+         }
+     }
+     if(isTrue==1){
+        char data[10];
+        for(int i=0;name[i]!='\0';i++){
+         printf("%c",name[i]);
+         data[i]=name[i];
+ }
+        printf("%s",data);     //int i = 0;
+        int ln= strlen(name);
+        printf("%d",ln);
+
+   return 0;
+ }
+
+}
